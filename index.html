@@ -13,6 +13,32 @@ and open the template in the editor.
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 
         <script type="text/javascript" src="plugin.js"></script>
+        <!--<script type="text/javascript" src="jquery-1.11.0.js"></script>-->
+
+        <style type="text/css">
+            table, th, td {
+                border-collapse:collapse;
+                border: solid 1px #ccc;
+                padding: 10px 20px;
+                text-align: center;
+            }
+
+            th {
+                background: #0f4871;
+                color: #fff;
+            }
+
+            tr:nth-child(2n) {
+                background: #f1f1f1;
+            }
+            td:hover {
+                color: #fff;
+                background: #CA293E;
+            }
+            td:focus {
+                background: #f44;
+            }
+        </style>
 
     </head>
     <body>
@@ -41,6 +67,66 @@ and open the template in the editor.
         <div class="texto-acessivel">
             Lalalalalalala <a href="#" class="link-acessivel">Link</a> Uhuhuhuhuuu
         </div>
+
+        <img src="img.jpg" class="imagem-acessivel" alt="teste imagem" />
+
+        <form class="form-acessivel" action="">
+            <input name="teste" type="text" placeholder="Nome">
+            <input name="teste1" type="email" placeholder="E-mail">
+            <input name="teste2" type="password" placeholder="Senha">
+            <textarea name="textarea" placeholder="Digite sua Mensagem"></textarea>
+            <select name="select">
+                <option value="1">Opção 1</option>
+                <option value="2">Opção 2</option>
+                <option value="3">Opção 3</option>
+            </select>
+            <input name="teste3" type="radio" placeholder="Homem">
+            <input name="teste4" type="radio" placeholder="Mulher">
+            <input name="teste5" type="checkbox" placeholder="Homem">
+            <input name="teste6" type="checkbox" placeholder="Mulher">
+            <button type="reset">Resetar</button>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <br/>
+
+        <table class="tabela-acessivel">
+            <thead>
+                <tr>
+                    <th>Título da Tabela 1</th>
+                    <th>Título da Tabela 2</th>
+                    <th>Título da Tabela 3</th>
+                    <th>Título da Tabela 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Linha 1 coluna 1</td>
+                    <td>Linha 1 coluna 2</td>
+                    <td>Linha 1 coluna 3</td>
+                    <td>Linha 1 coluna 4</td>
+                </tr>	
+                <tr>
+                    <td>Linha 2 coluna 1</td>
+                    <td>Linha 2 coluna 2</td>
+                    <td>Linha 2 coluna 3</td>
+                    <td>Linha 2 coluna 4</td>
+                </tr>	
+                <tr>
+                    <td>Linha 3 coluna 1</td>
+                    <td>Linha 3 coluna 2</td>
+                    <td>Linha 3 coluna 3</td>
+                    <td>Linha 3 coluna 4</td>
+                </tr>	
+                <tr>
+                    <td>Linha 4 coluna 1</td>
+                    <td>Linha 4 coluna 2</td>
+                    <td>Linha 4 coluna 3</td>
+                    <td>Linha 4 coluna 4</td>
+                </tr>	
+
+            </tbody>
+        </table>
 
 
 

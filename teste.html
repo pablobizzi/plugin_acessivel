@@ -1,49 +1,48 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>Teste de Plugin Acessível</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://www.google-analytics.com/ga.js" async="" type="text/javascript"></script><script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 
         <script type="text/javascript" src="plugin.js"></script>
 
-    </head>
+        <script src="/google_analytics_auto.js"></script></head>
     <body>
-        <div class="acessivel"> Teste </div>
-        <div class="teste acessivel"> Teste2 </div>
-        <button class="botao-acessivel">Testar</button>
+        <div tabindex="1" aria-label=" Teste " class="acessivel"> Teste </div>
+        <div tabindex="1" aria-label=" Teste2 " class="teste acessivel"> Teste2 </div>
+        <button role="button" tabindex="1" aria-label="Testar" class="botao-acessivel">Testar</button>
 
-        <ul class="menu-acessivel">
+        <ul role="menubar" tabindex="1" aria-label="Ítens listados em um menu acessível" class="menu-acessivel">
             <li>
-                <a href="#tab-panel1">Primeira Aba</a>
+                <a role="menuitem" tabindex="1" aria-label="Primeira Aba" href="#tab-panel1">Primeira Aba</a>
             </li>
             <li class="item-menu-acessivel">
-                <a href="#tab-panel2">Segunda Aba</a>
+                <a role="menuitem" tabindex="1" aria-label="Segunda Aba" href="#tab-panel2">Segunda Aba</a>
             </li>
             <li class="item-menu-acessivel">
-                <a href="#tab-panel3">Terceira Aba</a>
+                <a role="menuitem" tabindex="1" aria-label="Terceira Aba" href="#tab-panel3">Terceira Aba</a>
             </li>
         </ul>
 
-        <ul class="menu-acessivel">
-            <a href="#tab-panel1">Ítem</a>
-            <a href="#tab-panel1">Ítem 1</a>
-            <a href="#tab-panel1">Ítem 2</a>
+        <ul role="menubar" tabindex="1" aria-label="Ítens listados em um menu acessível" class="menu-acessivel">
+            <a role="menuitem" tabindex="1" aria-label="Ítem" href="#tab-panel1">Ítem</a>
+            <a role="menuitem" tabindex="1" aria-label="Ítem 1" href="#tab-panel1">Ítem 1</a>
+            <a role="menuitem" tabindex="1" aria-label="Ítem 2" href="#tab-panel1">Ítem 2</a>
         </ul>
 
-        <div class="texto-acessivel">
-            Lalalalalalala <a href="#" class="link-acessivel">Link</a> Uhuhuhuhuuu
+        <div aria-label="
+             Lalalalalalala <a href=&quot;#&quot; class=&quot;link-acessivel&quot;>Link</a> Uhuhuhuhuuu
+             " role="article" tabindex="1" class="texto-acessivel">
+            Lalalalalalala <a role="article" tabindex="1" aria-label="Link" href="#" class="link-acessivel">Link</a> Uhuhuhuhuuu
         </div>
 
+        <img tabindex="1" aria-label="teste imagem" src="img.jpg" class="imagem-acessivel" alt="teste imagem">
 
 
 
-    </body>
-</html>
+
+
+
+    </body></html>
